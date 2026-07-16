@@ -1,0 +1,25 @@
+Title: Reinforcement Learning for Long-Horizon Interactive LLM Agents
+
+Abstract: Training LLM agents for long-horizon interactive tasks typically
+requires expensive ground-truth action sequences or very large training
+datasets. This paper introduces LOOP, a method that combines Proximal
+Policy Optimization (PPO) with a leave-one-out baseline estimate and
+per-token clipping, enabling effective reinforcement learning for
+multi-turn LLM agents without those expensive requirements.
+
+Key contribution: LOOP demonstrates that reinforcement learning can
+effectively train interactive agents to perform long sequences of actions
+(browsing, tool calls, multi-step reasoning) purely from environment
+feedback, rather than imitation of pre-collected expert trajectories.
+
+Method details: The leave-one-out baseline is computed by averaging the
+returns of other samples within the same batch, removing the need for a
+separately trained value network. Per-token clipping applies the PPO
+clipped surrogate objective at the granularity of individual output
+tokens rather than whole episodes, improving training stability for
+long-generation agents.
+
+Results: Agents trained with LOOP outperform baselines on multi-step web
+navigation and tool-use benchmarks, achieving higher task completion
+rates with significantly less training data than imitation-learning
+approaches.

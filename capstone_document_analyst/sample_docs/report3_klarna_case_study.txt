@@ -1,0 +1,24 @@
+Title: Klarna AI Customer Service Agent — Enterprise Case Study
+
+Summary: Klarna, a fintech "buy now pay later" company, deployed an AI
+customer service agent built on top of a large language model. By Q3
+2025, the agent was handling roughly two-thirds of all customer service
+chats, equivalent to the workload of 853 full-time employees.
+
+Performance metrics: Average response time dropped from 11 minutes to
+under 2 minutes, an 82% improvement. Klarna reported approximately $60
+million in savings attributable to this deployment.
+
+Risks identified: Industry analysis of similar large-scale agentic AI
+deployments highlights several recurring risks: data leaks, unauthorized
+changes to core systems, low visibility into the agent's individual
+actions, and runaway costs from parallel or recursive tool calls. A
+broader industry statistic notes that 88% of AI agent projects never
+reach production, with the leading causes being infrastructure gaps
+(41%), governance and security barriers (38%), and difficulty measuring
+ROI (33%).
+
+Lesson: The highest-ROI agentic AI deployments share three
+characteristics: the agent owns a complete decision end-to-end, it runs
+in production rather than as a pilot, and the system architecture is
+matched to the actual risk level of the task being automated.

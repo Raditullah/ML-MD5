@@ -1,0 +1,17 @@
+venv/
+mamba_env/
+.mamba/
+.venv/
+n8n_install/
+__pycache__/
+*.pyc
+*.pth
+*.pt
+*.pkl
+*.safetensors
+*.ckpt
+*.zip
+node_modules/
+n8n_server.log
+n8n.pid
+.DS_Storelab5_6_drone_rl/gym-pybullet-drones/

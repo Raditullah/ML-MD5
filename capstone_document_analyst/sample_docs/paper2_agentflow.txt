@@ -1,0 +1,25 @@
+Title: In-the-Flow Agentic System Optimization for Effective Planning and Tool Use
+
+Abstract: Most LLM agent systems optimize their planner, executor, and
+verifier components separately and statically, meaning the planner never
+learns from real execution feedback. This paper introduces AgentFlow, a
+trainable, in-the-flow agentic framework that coordinates four modules
+(planner, executor, verifier, generator) through an evolving memory, and
+directly optimizes the planner inside the multi-turn interaction loop.
+
+Key contribution: AgentFlow moves agentic AI from the "static LLM plus
+prompt engineering" paradigm toward end-to-end trained agent components
+that learn from their own multi-step experience, closer to classical
+reinforcement learning principles.
+
+Architecture: Four coordinated modules share an evolving memory state.
+The planner proposes next actions, the executor calls tools, the verifier
+checks whether the action achieved its intended effect, and the generator
+produces the final response. Unlike static pipelines, the planner's
+parameters are updated using signal derived from the verifier's judgments
+across the whole trajectory.
+
+Results: AgentFlow-trained agents show improved planning accuracy and
+tool-selection correctness compared to agents built from frozen LLMs with
+hand-engineered prompts, especially on tasks requiring more than five
+sequential tool calls.
